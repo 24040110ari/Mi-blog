@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comentarios</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSS conectado -->
+</head>
+<body>
+  <header>
+    <h1>Ari Macias</h1>
+    <p><i>Puedes ser parte de mi vida</i></p>
+  </header>
+
+  <main>
+    <h2>¿Qué estás pensando?</h2>
+    <p>Deja algún comentario sobre mi pequeño Blog.</p>
+
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="comentario">Comentario:</label>
+      <textarea id="comentario" name="comentario" rows="5"></textarea>
+
+      <button type="submit">Enviar Comentario</button>
+    </form>
+
+    <button onclick="window.location.href='index.html'">Regresar al inicio</button>
+  </main>
+</body>
+</html>

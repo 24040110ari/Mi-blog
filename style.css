@@ -1,0 +1,161 @@
+/* ===========================
+   Estilos generales
+=========================== */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #ffe6f0; /* rosa claro */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffb6c1; /* rosa medio */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-style: italic;
+}
+
+/* ===========================
+   Main / contenido
+=========================== */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #ff69b4; /* rosa fuerte */
+  margin-top: 40px;
+}
+
+h3 {
+  color: #ff1493; /* rosa intenso */
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ===========================
+   Botones
+=========================== */
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Links y redes sociales
+=========================== */
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffb6c1;
+  color: white;
+}
+
+footer a img {
+  width: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* ===========================
+   Formulario (comentarios)
+=========================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ff69b4;
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   Secciones de fotos
+=========================== */
+.section img {
+  width: 35%;
+  margin: 10px 2.5%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.section img:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Likes en index.html
+=========================== */
+.likes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.likes a img {
+  width: 160px;
+  margin: 10px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.likes a img:hover {
+  transform: scale(1.1);
+}
+
+/* ===========================
+   Emojis decorativos en headers
+=========================== */
+header h1::after {
+  content: " 🌸✨";
+}
+
+footer p::after {
+  content: " 💖";
+}

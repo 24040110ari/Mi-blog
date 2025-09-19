@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lo que más me gusta</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSS conectado -->
+</head>
+<body>
+  <header>
+    <h1>Ari Macias</h1>
+    <p><i>Puedes ser parte de mi vida</i></p>
+  </header>
+
+  <main>
+    <h2>Más sobre lo que amo</h2>
+
+    <div class="section" id="series">
+      <h3>Ver series</h3>
+      <p>Me encanta ver series, en especial K-dramas.</p>
+      <img src="https://i.pinimg.com/1200x/2c/b9/60/2cb960cdeb340178527179111af6c85b.jpg" alt="Serie 1">
+      <img src="https://i.pinimg.com/736x/8d/3c/cc/8d3ccc45950e5265e837f577a367322e.jpg" alt="Serie 2">
+    </div>
+
+    <div class="section" id="entrenar">
+      <h3>Entrenar</h3>
+      <p>Me gusta entrenar varias cosas, actualmente soy porrista.</p>
+      <img src="https://i.pinimg.com/736x/d9/33/76/d93376374993f4fde5716cfeabfcf91d.jpg" alt="Entrenar 1">
+      <img src="https://i.pinimg.com/1200x/5d/da/3f/5dda3fc9bc59e3f244c9635cd363bf3f.jpg" alt="Entrenar 2">
+    </div>
+
+    <div class="section" id="musica">
+      <h3>Escuchar música</h3>
+      <p>Disfruto escuchar música, así me alejo del mundo un momento.</p>
+      <img src="https://i.pinimg.com/736x/5e/82/2c/5e822ca3a96d5b3c31dca4c11e8cd092.jpg" alt="Musica 1">
+      <img src="https://i.pinimg.com/736x/ca/65/d4/ca65d4d8db238d8a31f33411fd177c06.jpg" alt="Musica 2">
+    </div>
+
+    <button onclick="window.location.href='index.html'">Regresar al inicio</button>
+  </main>
+
+  <script>
+    // Mostrar solo la sección correspondiente al hash en la URL
+    window.addEventListener("DOMContentLoaded", function () {
+      const hash = window.location.hash.substring(1);
+      const sections = document.querySelectorAll(".section");
+
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+
+      const selected = document.getElementById(hash);
+      if (selected) {
+        selected.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
